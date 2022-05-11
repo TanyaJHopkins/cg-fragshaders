@@ -12,13 +12,14 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background-color: #A8A8A8;
+    background-color: #242426;
 }
 
 h1 {
     font-size: 2rem;
     font-weight: bold;
     font-style: normal;
+    color: #FFFFFF;
 }
 
 h2 {
@@ -42,13 +43,13 @@ input {
 }
 
 #wrapper {
-    background-color: #FFFFFF;
+    background-color: #48484A;
     width: 960px;
     height: 100%;
 }
 
 #content {
-    background-color: #FFFFFF;
+    background-color: #48484A;
     width: 920px;
     padding: 10px 10px 0px 10px;
     text-align: center;
@@ -90,11 +91,12 @@ input {
 .toggle_label {
     display: inline-block;
     margin: 0.75rem 1rem 0 1rem;
+    color: #ffffff
 }
 
 .filter_button {
     display: inline-block;
-    background-color: #6A6A6A;
+    background-color: #8e8e93;
     width: 10rem;
     height: 3rem;
     margin: 0.5rem;
@@ -102,13 +104,18 @@ input {
 }
 
 .filter_button[selected="true"] {
-    background-color: #2A3A8A;
+    background-color: #1a58aa;
+    font-weight: bold;
+}
+
+.filter_button#custom_button[selected="true"] {
+    background: linear-gradient(90deg, rgba(225,0,0,1) 0%, rgba(225,225,0,1) 16%, rgba(0,225,0,1) 33%, rgba(0,225,225,1) 50%, rgba(0,0,225,1) 66%, rgba(225,0,225,1) 83%, rgba(225,0,0,1) 100%);
 }
 
 .filter_button p {
     height: 3rem;
     line-height: 3rem;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .spacer {
@@ -157,11 +164,11 @@ input {
 }
   
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #1a58aa;
 }
   
 input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #1a58aa;
 }
   
 input:checked + .slider:before {
